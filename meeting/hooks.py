@@ -51,6 +51,10 @@ app_license = "n"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
+# List of website generators
+website_generators = ["Meeting"]
+# This list specifies the doctypes for which website pages need to be generated using templates.
+
 # Jinja
 # ----------
 
@@ -125,6 +129,24 @@ app_license = "n"
 #		"on_trash": "method"
 #	}
 # }
+
+
+
+# Document Events
+doc_events = {
+    # Document events are used to trigger custom functions when specific events occur on certain doctypes.
+
+    # For the "User" doctype, execute the "make_orientation_meeting" function after a new user is inserted.
+    "User": {
+        "after_insert": "meeting.api.make_orientation_meeting"
+    },
+
+    # For the "ToDo" doctype, execute the "update_minute_status" function on update and on trash (when ToDo is deleted).
+    "ToDo": {
+        "on_update": "meeting.api.update_minute_status",
+        "on_trash": "meeting.api.update_minute_status"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
