@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "Meeting-.#",
+ "creation": "2023-08-13 19:22:10.210969",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "show_in_website",
+  "page_name",
+  "route",
+  "column_break_p2n3t",
+  "date",
+  "from_time",
+  "to_time",
+  "agenda_section",
+  "agenda",
+  "attendees_section",
+  "attendees",
+  "invitation_section",
+  "invitation_message",
+  "send_emails",
+  "minutes_section",
+  "minutes",
+  "send_minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nInvitation Sent\nIn Progress\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "show_in_website",
+   "fieldtype": "Check",
+   "label": "Show in Website"
+  },
+  {
+   "fieldname": "page_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Page Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Parent Website Route"
+  },
+  {
+   "fieldname": "column_break_p2n3t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To Time",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "agenda;",
+   "fieldname": "agenda_section",
+   "fieldtype": "Section Break",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "Meeting Agenda"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "attendees;",
+   "fieldname": "attendees_section",
+   "fieldtype": "Section Break",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Meeting Attendee"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "invitation;",
+   "fieldname": "invitation_section",
+   "fieldtype": "Section Break",
+   "label": "Invitation"
+  },
+  {
+   "fieldname": "invitation_message",
+   "fieldtype": "Text Editor",
+   "label": "Invitation Message"
+  },
+  {
+   "depends_on": "doc.status===\"Planned\";",
+   "fieldname": "send_emails",
+   "fieldtype": "Button",
+   "label": "Send Emails "
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "minutes;",
+   "fieldname": "minutes_section",
+   "fieldtype": "Section Break",
+   "label": "Minutes"
+  },
+  {
+   "fieldname": "minutes",
+   "fieldtype": "Table",
+   "label": "Minutes",
+   "options": "Meeting Minute"
+  },
+  {
+   "depends_on": "doc.status === \"In Progress\";",
+   "fieldname": "send_minutes",
+   "fieldtype": "Button",
+   "label": "Send Minutes"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "show_in_website",
+ "links": [],
+ "modified": "2023-08-13 19:44:56.117897",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Meeting Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Meeting Attendee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "meeting",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
