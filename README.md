@@ -1,7 +1,7 @@
 ## Meeting
 
-~/frappe-bennch/apps$ bench --site shine.in uninstall-app meeting
+Prepare agenda, send invitation and record minutes.
 
 #### License
 
-Backing up...
+n

@@ -2,10 +2,10 @@ from . import __version__ as app_version
 
 app_name = "meeting"
 app_title = "Meeting"
-app_publisher = "Uninstalling App meeting from Site shine.in..."
-app_description = "~/frappe-bennch/apps$ bench --site shine.in uninstall-app meeting"
-app_email = "All doctypes (including custom), modules related to this app will be deleted. Are you sure you want to continue? [y/N]: y"
-app_license = "Backing up..."
+app_publisher = "Diya"
+app_description = "Prepare agenda, send invitation and record minutes."
+app_email = "diya@meeting.com"
+app_license = "n"
 
 # Includes in <head>
 # ------------------

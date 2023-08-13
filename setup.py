@@ -9,9 +9,9 @@ from meeting import __version__ as version
 setup(
 	name="meeting",
 	version=version,
-	description="~/frappe-bennch/apps$ bench --site shine.in uninstall-app meeting",
-	author="Uninstalling App meeting from Site shine.in...",
-	author_email="All doctypes (including custom), modules related to this app will be deleted. Are you sure you want to continue? [y/N]: y",
+	description="Prepare agenda, send invitation and record minutes.",
+	author="Diya",
+	author_email="diya@meeting.com",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
