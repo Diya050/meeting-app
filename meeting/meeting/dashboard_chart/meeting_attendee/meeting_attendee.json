@@ -1,0 +1,43 @@
+{
+ "based_on": "modified",
+ "chart_name": "Meeting Attendee",
+ "chart_type": "Count",
+ "color": "#ECAD4B",
+ "creation": "2023-08-14 13:20:28.212909",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "User",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-08-14 13:17:32.878391",
+ "modified": "2023-08-14 13:21:09.734840",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting Attendee",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Meeting Attendee"
+  },
+  {
+   "role": "Meeting Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "source": "",
+ "time_interval": "Daily",
+ "timeseries": 1,
+ "timespan": "Last Week",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}
