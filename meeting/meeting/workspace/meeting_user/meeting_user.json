@@ -1,0 +1,86 @@
+{
+ "charts": [
+  {
+   "chart_name": "Meeting",
+   "label": "Meeting"
+  },
+  {
+   "chart_name": "Meeting Attendee",
+   "label": "Meeting Attendee"
+  }
+ ],
+ "content": "[{\"id\":\"1Ong2vm8_o\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><span class=\\\"h2\\\"></span><span class=\\\"h1\\\">Meeting App</span><br></span>\",\"col\":12}},{\"id\":\"DgP1kdixpn\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"SDnJLl-sf1\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Meeting\",\"col\":6}},{\"id\":\"9sVo5EQSwU\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"User\",\"col\":6}},{\"id\":\"VL6jeLh0P_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"BMqm5kpsbz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b><span class=\\\"h1\\\">More Information</span><br></b></span>\",\"col\":12}},{\"id\":\"wklDRLNvbv\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"zUeQ94P6gB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Number Of Meetings\",\"col\":4}},{\"id\":\"wC3tHmaviZ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meeting\",\"col\":12}},{\"id\":\"E_fiBGckZp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Number Of Attendees\",\"col\":4}},{\"id\":\"tdltRmACBw\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meeting Attendee\",\"col\":12}}]",
+ "creation": "2023-08-14 13:38:57.968935",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Meeting User",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting",
+   "link_count": 0,
+   "link_to": "Meeting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting Attendee",
+   "link_count": 0,
+   "link_to": "Meeting Attendee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-14 14:11:46.388053",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting User",
+ "number_cards": [
+  {
+   "label": "Number Of Meetings",
+   "number_card_name": "Number Of Meetings"
+  },
+  {
+   "label": "Number Of Attendees",
+   "number_card_name": "Number Of Attendees"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Users",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Meeting",
+   "label": "Meeting"
+  },
+  {
+   "document_type": "User",
+   "label": "User"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Meeting Manager"
+  },
+  {
+   "role": "Meeting Attendee"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "Meeting User"
+}
