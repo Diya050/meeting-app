@@ -2,7 +2,7 @@
 def send_invitation_emails(meeting):
 	meeting = frappe.get_doc("Meeting", meeting)
 	sender_fullname = get_fullname(frappe.session.user)
-
+	
 	if meeting.status == "Planned":
 		if meeting.attendees:
 				message = frappe.get_template("templates/emails/meeting_invitation.html").render({
