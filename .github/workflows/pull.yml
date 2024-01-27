@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Frappe Bench
+      - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-pip python3-setuptools python3-wheel
@@ -22,17 +22,17 @@ jobs:
 
       - name: Pull Changes
         run: |
-          cd /path/to/your/app  # Replace with the path to your app
-          git pull origin master
+          cd apps/meeting-app-ROUGH
+          git pull origin main
 
-      - name: Update Dependencies
+      - name: Build App
         run: |
-          cd /path/to/your/app  # Replace with the path to your app
-          bench update --requirements
+          cd apps/meeting-app-ROUGH
+          bench build
 
-      - name: Restart Frappe Services
+      - name: Deploy App
         run: |
-          cd apps/meeting-app-ROUGH  # Replace with the path to your app
+          cd apps/meeting-app-ROUGH
           bench restart
 
       - name: Check Deployment Status
