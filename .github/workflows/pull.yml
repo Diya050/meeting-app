@@ -1,0 +1,41 @@
+name: CI/CD for Frappe Meeting App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Frappe Bench
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip python3-setuptools python3-wheel
+          sudo pip3 install frappe-bench
+          bench --version
+
+      - name: Pull Changes
+        run: |
+          cd /path/to/your/app  # Replace with the path to your app
+          git pull origin main
+
+      - name: Update Dependencies
+        run: |
+          cd /path/to/your/app  # Replace with the path to your app
+          bench update --requirements
+
+      - name: Restart Frappe Services
+        run: |
+          cd /path/to/your/app  # Replace with the path to your app
+          bench restart
+
+      - name: Check Deployment Status
+        run: |
+          # Add any additional checks or tests here
+          echo "Deployment successful!"
