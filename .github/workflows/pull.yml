@@ -3,7 +3,7 @@ name: CI/CD for Frappe Meeting App
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -23,7 +23,7 @@ jobs:
       - name: Pull Changes
         run: |
           cd /path/to/your/app  # Replace with the path to your app
-          git pull origin main
+          git pull origin master
 
       - name: Update Dependencies
         run: |
