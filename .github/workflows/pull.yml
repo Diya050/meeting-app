@@ -32,7 +32,7 @@ jobs:
 
       - name: Restart Frappe Services
         run: |
-          cd /path/to/your/app  # Replace with the path to your app
+          cd apps/meeting-app-ROUGH  # Replace with the path to your app
           bench restart
 
       - name: Check Deployment Status
